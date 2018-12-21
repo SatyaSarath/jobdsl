@@ -13,13 +13,13 @@ job('nodejobdocdsl'){
 	}
 	steps{
 		dockerBuildAndPublish {
-            repositoryName('satyasarath/nodejsjob1')
-            tag('${BUILD_NUMBER}')
-            registryCredentials('docker-hub')
-            forcePull(false)
-            createFingerprints(false)
-            skipDecorate()
-		)
+            	repositoryName('satyasarath/nodejsjob1')
+            	tag('${BUILD_NUMBER}')
+            	registryCredentials('docker-hub')
+            	forcePull(false)
+            	createFingerprints(false)
+            	skipDecorate()
+		}
 		
 	}
 }
