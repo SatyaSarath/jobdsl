@@ -1,6 +1,6 @@
 job('nodejobdsl'){
 	scm{
-		git('https://github.com/SatyaSarath/docker-demo.git'){
+		git('https://github.com/SatyaSarath/docker-demo.git'){ node -> // is hudson.plugins.git.GitSCM
 			node / gitConfigName('satyasarath')
 			node / gitConfigEmail('satya.kotha@wipro.com')
 		}
