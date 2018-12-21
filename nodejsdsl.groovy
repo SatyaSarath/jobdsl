@@ -1,6 +1,6 @@
 job('nodejobdsl'){
 	scm{
-		git('git@github.com:SatyaSarath/docker-demo.git')
+		git('https://github.com/SatyaSarath/docker-demo.git')
 	}
 	triggers{
 		scm('H/5 * * * *')
