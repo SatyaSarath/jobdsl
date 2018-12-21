@@ -15,7 +15,7 @@ job('nodejobdocdsl'){
 		shell('cat /var/secret/dockerpasswd | docker login --username satyasarath --password-stdin')
 		dockerBuildAndPublish {
             	repositoryName('satyasarath/nodejsjob1')
-            	tag('${BUILD_NUMBER}')
+			tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=8}')
             	registryCredentials('docker-hub')
             	forcePull(false)
 		forceTag(false)
