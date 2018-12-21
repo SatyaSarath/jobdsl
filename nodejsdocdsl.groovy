@@ -18,7 +18,7 @@ job('nodejobdocdsl'){
             	tag('${BUILD_NUMBER}')
             	registryCredentials('docker-hub')
             	forcePull(false)
-		force(false)
+		forceTag(false)
             	createFingerprints(false)
             	skipDecorate()
 		}
